@@ -22,6 +22,15 @@ yarn start
 
 ```
 
+## API
+```bash
+GET /heartbeat # thump thump
+GET /start # start the headless browser
+GET /stop # stop the thing
+GET /db # get all entries
+POST /db # write an entry manually
+```
+
 TODO:
 - Add CI / Deploy pipeline
 - Add better headless browser configs for random user agents and screen sizes
