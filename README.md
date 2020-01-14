@@ -32,6 +32,6 @@ POST /db # write an entry manually
 ```
 
 TODO:
-- Add CI / Deploy pipeline
-- Add better headless browser configs for random user agents and screen sizes
-- Add unit tests
+- [ ] Add CI / Deploy pipeline
+- [ ] Add better headless browser configs for random user agents and screen sizes
+- [ ] Add unit tests
