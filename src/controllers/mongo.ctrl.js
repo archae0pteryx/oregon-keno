@@ -18,6 +18,14 @@ class MongoController {
       throw new Error(e)
     }
   }
+  static async last(req, res) {
+    try {
+      const ret = await KenoEntity.last()
+      return res.send(ret)
+    } catch (e) {
+      throw new Error(e)
+    }
+  }
 }
 
 module.exports = MongoController

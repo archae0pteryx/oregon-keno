@@ -18,6 +18,14 @@ class KenoEntity {
       throw new Error(e)
     }
   }
+  static async last() {
+    try {
+      const collection = mongo.database.collection('keno')
+      return collection.find().limit(1).sort({ $natural: -1 }).toArray()
+    } catch (e) {
+      throw new Error(e)
+    }
+  }
 }
 
 module.exports = KenoEntity

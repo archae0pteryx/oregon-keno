@@ -15,6 +15,9 @@ module.exports = function router(app) {
     .get(MongoController.get)
     .post(MongoController.write)
 
+  app.route('/last')
+    .get(MongoController.last)
+
   app.route('*')
     .get(function badRoute(req, res) {
       return res.send('bad route')
