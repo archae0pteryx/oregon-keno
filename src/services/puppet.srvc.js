@@ -14,6 +14,7 @@ class PuppetService {
       })
       this.page = await this.browser.newPage()
       await this.page.goto(ROOT_URL)
+      console.log('started puppet')
       this.page.on('response', async res => {
         try {
           const kenoObj = await PuppetService._processResponse(res)
