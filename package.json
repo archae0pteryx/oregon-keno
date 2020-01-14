@@ -5,7 +5,9 @@
   "license": "MIT",
   "scripts": {
     "start": "node src/index.js",
-    "dev": "node -r dotenv/config src/index.js"
+    "dev": "node -r dotenv/config src/index.js",
+    "test": "jest src/",
+    "test:watch": "jest --watchAll src/"
   },
   "dependencies": {
     "body-parser": "^1.19.0",
