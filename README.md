@@ -1,6 +1,6 @@
 # Oregon Lottery Keno Scraper
 ---
-A server to scrape the oregon lottery keno picks with a control api
+A server to scrape and save the oregon lottery keno picks with a control api
 
 ## requirements
 - node v12
