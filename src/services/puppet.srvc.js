@@ -1,17 +1,18 @@
 const puppeteer = require('puppeteer')
 const { isJsonString, logger } = require('../utils')
 const { KenoEntity } = require('../entities')
-const { ROOT_URL } = process.env
+const { ROOT_URL, NODE_ENV } = process.env
 
 class PuppetService {
   static async start() {
     try {
-      this.browser = await puppeteer.launch({
+      this.browser = NODE_ENV === 'production' ? await puppeteer.launch({
         'args' : [
           '--no-sandbox',
           '--disable-setuid-sandbox'
         ]
-      })
+      }) : await puppeteer.launch()
+
       this.page = await this.browser.newPage()
       await this.page.goto(ROOT_URL)
       console.log('started puppet')
