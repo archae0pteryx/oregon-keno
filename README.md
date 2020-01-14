@@ -35,3 +35,6 @@ TODO:
 - [ ] Add CI / Deploy pipeline
 - [ ] Add better headless browser configs for random user agents and screen sizes
 - [ ] Add unit tests
+
+notes:
+[heroku puppeteer fix](https://stackoverflow.com/questions/52225461/puppeteer-unable-to-run-on-heroku)
