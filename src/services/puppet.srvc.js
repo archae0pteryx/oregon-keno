@@ -6,7 +6,12 @@ const { ROOT_URL } = process.env
 class PuppetService {
   static async start() {
     try {
-      this.browser = await puppeteer.launch()
+      this.browser = await puppeteer.launch({
+        'args' : [
+          '--no-sandbox',
+          '--disable-setuid-sandbox'
+        ]
+      })
       this.page = await this.browser.newPage()
       await this.page.goto(ROOT_URL)
       this.page.on('response', async res => {
