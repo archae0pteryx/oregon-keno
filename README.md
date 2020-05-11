@@ -1,6 +1,9 @@
 # Oregon Lottery Keno Scraper
 ---
-A server to scrape and save the oregon lottery keno picks with a control api
+Update: May 2020
+The scraper is still running very well. If you would like an API key to access the raw data in real time for any reason ping me and we can work something out.
+
+A server to scrape and save the oregon lottery keno picks with a control api. There is a companion repo with my probability algorithms that I apply to this pseudo random number generator. Some of the algorithms there were shared with me by a friend and his business partner and were developed by him during the vietnam war for target marketing. Unfortunatly, I promised I would not open source it.
 
 ## requirements
 - node v12
